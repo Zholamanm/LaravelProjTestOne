@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use App\Models\UserModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -63,6 +62,6 @@ class AuthController extends Controller
 
     public function logout() {
         Auth::logout();
-        return redirect()->route('home'); // Или куда бы вы ни хотели перенаправить пользователя после выхода
+        return redirect()->route('home');
     }
 }

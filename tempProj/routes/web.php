@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PriceController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['web'])->group(function () {
     Route::get('/', [MainController::class, 'home'])->name('home');
+
+    Route::get('/profile', [MainController::class, 'profile'])->name('profile');
+
+    Route::get('/profile/edit', [ProfileController::class, 'profile_edit'])->name('profile_edit');
+
+    Route::post('/profile/edit/check', [ProfileController::class, 'profile_edit_check']);
 
     Route::get('/about', [MainController::class, 'about']);
 

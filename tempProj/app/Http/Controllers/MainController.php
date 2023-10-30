@@ -10,6 +10,10 @@ class MainController extends Controller {
         return view('home');
     }
 
+    public function profile() {
+        return view('profile');
+    }
+
     public function about() {
         return view('about');
     }
@@ -54,6 +58,4 @@ class MainController extends Controller {
 
         return redirect()->route('faqs');
     }
-
-
 }
