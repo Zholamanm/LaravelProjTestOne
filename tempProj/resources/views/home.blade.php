@@ -115,6 +115,13 @@
                 <img src="https://www.granhotelmiramarmalaga.com/wp-content/blogs.dir/1833/files/fotos-landings/spa-malaga-cabecera-movil.jpg" alt="" class="img-fluid">
             </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette justify-content-center">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12087.35822583038!2d-73.98340029559425!3d40.76555345195444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f07d5da561%3A0x61f6aa300ba8339d!2z0J7RgtC10LvRjCDQn9C70LDQt9Cw!5e0!3m2!1sru!2skz!4v1698330412612!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
     </div>
 
 @endsection

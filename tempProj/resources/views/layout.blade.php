@@ -25,8 +25,15 @@
     </ul>
 
     <div class="col-md-3 text-end mx-5">
-        <button type="button" class="btn btn-outline-primary me-2" style="border-color: #5F7ADB; color: #A2B2EE">Login</button>
-        <button type="button" class="btn btn-primary" style="background-color: #2E3239; border-color: #5F7ADB; color: #A2B2EE">Sign-up</button>
+        @if(auth()->check())
+            <span>Welcome, {{ auth()->user()->username }}!</span>
+            <!-- Здесь также может быть кнопка или ссылка для выхода пользователя -->
+            <a href="{{ route('logout') }}" class="btn btn-outline-danger">Logout</a>
+        @else
+            <button type="button" class="btn btn-outline-primary me-2" style="border-color: #5F7ADB; color: #A2B2EE"><a href="/login" class="nav-link">Login</a></button>
+            <button type="button" class="btn btn-primary" style="background-color: #2E3239; border-color: #5F7ADB; color: #A2B2EE"><a href="/sign" class="nav-link">Sign up</a></button>
+            <!-- Здесь ваш код для кнопок Login и Sign up -->
+        @endif
     </div>
 </header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>

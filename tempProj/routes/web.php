@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PriceController;
 use Illuminate\Support\Facades\Route;
@@ -15,30 +16,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainController::class, 'home']);
+Route::middleware(['web'])->group(function () {
+    Route::get('/', [MainController::class, 'home'])->name('home');
 
-Route::get('/about', [MainController::class, 'about']);
+    Route::get('/about', [MainController::class, 'about']);
 
-Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
+    Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
 
-Route::post('/faqs/check', [MainController::class, 'faqs_check']);
+    Route::post('/faqs/check', [MainController::class, 'faqs_check']);
 
-Route::get('/pricing', [MainController::class, 'pricing'])->name('pricing');
+    Route::get('/pricing', [MainController::class, 'pricing'])->name('pricing');
 
-Route::get('/pricing/budget/buy', [MainController::class, 'pricing_budget_buy'])->name('budget_buy');
+    Route::get('/pricing/budget/buy', [MainController::class, 'pricing_budget_buy'])->name('budget_buy');
 
-Route::get('/pricing/luxe/buy', [MainController::class, 'pricing_luxe_buy'])->name('luxe_buy');
+    Route::get('/pricing/luxe/buy', [MainController::class, 'pricing_luxe_buy'])->name('luxe_buy');
 
-Route::get('/pricing/deluxe/buy', [MainController::class, 'pricing_deluxe_buy'])->name('deluxe_buy');
+    Route::get('/pricing/deluxe/buy', [MainController::class, 'pricing_deluxe_buy'])->name('deluxe_buy');
 
-Route::post('/pricing/budget/buy/check', [PriceController::class, 'pricing_budget_buy_check']);
+    Route::post('/pricing/budget/buy/check', [PriceController::class, 'pricing_budget_buy_check']);
 
-Route::post('/pricing/luxe/buy/check', [PriceController::class, 'pricing_luxe_buy_check']);
+    Route::post('/pricing/luxe/buy/check', [PriceController::class, 'pricing_luxe_buy_check']);
 
-Route::post('/pricing/deluxe/buy/check', [PriceController::class, 'pricing_deluxe_buy_check']);
+    Route::post('/pricing/deluxe/buy/check', [PriceController::class, 'pricing_deluxe_buy_check']);
 
-Route::get('/features', [MainController::class, 'features'])->name('features');
+    Route::get('/features', [MainController::class, 'features'])->name('features');
 
+    Route::get('/login', [AuthController::class, 'login']);
+
+    Route::post('/login/check', [AuthController::class, 'login_check']);
+
+    Route::get('/sign', [AuthController::class, 'sign']);
+
+    Route::post('/sign/check', [AuthController::class, 'sign_check']);
+
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+});
 
 //Route::get('/user/{id}/{name}', function ($id, $name) {
 //    return 'ID: '. $id.'. NAME: '.$name;

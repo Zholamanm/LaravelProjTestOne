@@ -9,15 +9,15 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'ef65a1626449d89d0811cf9befce46f0' => __DIR__ . '/..' . '/illuminate/events/functions.php',
@@ -30,6 +30,10 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'p' => 
+        array (
+            'phpDocumentor\\Reflection\\' => 25,
         ),
         'T' => 
         array (
@@ -66,6 +70,9 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
+            'Psr\\Cache\\' => 10,
+            'PhpParser\\' => 10,
+            'PHPStan\\PhpDocParser\\' => 21,
         ),
         'L' => 
         array (
@@ -95,12 +102,22 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
             'DragonCode\\PrettyArray\\' => 23,
             'DragonCode\\Contracts\\' => 21,
             'Doctrine\\Inflector\\' => 19,
+            'Doctrine\\Deprecations\\' => 22,
+            'Doctrine\\DBAL\\' => 14,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
         ),
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
+            'Composer\\Pcre\\' => 14,
+            'Composer\\ClassMapGenerator\\' => 27,
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Barryvdh\\LaravelIdeHelper\\' => 26,
         ),
         'A' => 
         array (
@@ -112,6 +129,11 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'phpDocumentor\\Reflection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Termwind\\' => 
         array (
@@ -221,6 +243,18 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'PHPStan\\PhpDocParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
+        ),
         'League\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/config/src',
@@ -255,9 +289,9 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/macroable',
+            0 => __DIR__ . '/..' . '/illuminate/collections',
             1 => __DIR__ . '/..' . '/illuminate/conditionable',
-            2 => __DIR__ . '/..' . '/illuminate/collections',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
             3 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Pipeline\\' => 
@@ -304,6 +338,22 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
+        'Doctrine\\Deprecations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
+        'Doctrine\\DBAL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/dbal/src',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+        ),
         'Dflydev\\DotAccessData\\' => 
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
@@ -312,13 +362,35 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
+        'Composer\\Pcre\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
+        'Composer\\ClassMapGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/class-map-generator/src',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
+        'Barryvdh\\LaravelIdeHelper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-ide-helper/src',
+        ),
         'ArchTech\\Enums\\' => 
         array (
             0 => __DIR__ . '/..' . '/archtechx/enums/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'B' => 
+        array (
+            'Barryvdh' => 
+            array (
+                0 => __DIR__ . '/..' . '/barryvdh/reflection-docblock/src',
+            ),
         ),
     );
 
@@ -407,6 +479,7 @@ class ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb52acd6fed2d58268b162f3b41adb10c::$classMap;
 
         }, null, ClassLoader::class);
