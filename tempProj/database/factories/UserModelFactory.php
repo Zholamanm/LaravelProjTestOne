@@ -24,6 +24,7 @@ class UserModelFactory extends Factory
             'password' => bcrypt('password'),
             'phone' => $this->faker->phoneNumber,
             'avatar' => $this->faker->imageUrl(),
-        ];
+            'confiramtion_code' => $this->faker->unique()->md5,
+            ];
     }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="{{ asset('build/assets/app-6fad8c1c.js') }}"></script>
 </head>
 <body style="background-color: #5F7ADB;">
 <section>
@@ -65,6 +66,9 @@
         </div>
     </form>
 </section>
+<div id="app">
+    <example-component></example-component>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

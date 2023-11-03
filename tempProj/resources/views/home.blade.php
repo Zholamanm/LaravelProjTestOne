@@ -72,7 +72,7 @@
             </div>
             <div class="col-lg-3">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beach Resort" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Beach Resort</title>
-                    <image href="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/325685518.jpg?k=2bbbe9b857470291da0a8545a27cf3d1f3e758ae4a4a94f9d3fd1d77211c86cd&o=" height="180px" width="190px" y="-20"/></svg></svg>
+                    <image href="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/325685518.jpg?k=2bbbe9b857470291da0a8545a27cf3d1f3e758ae4a4a94f9d3fd1d77211c86cd&o=" height="180px" width="190px" y="-20"/></svg>
                 <h2 class="fw-normal">Beach Resorts</h2>
                 <p>Step out of your room and onto the beach. Our resorts offer the best ocean views and sand-between-your-toes moments!</p>
                 <p><a class="btn btn-secondary" href="#">View More »</a></p>
@@ -123,5 +123,10 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12087.35822583038!2d-73.98340029559425!3d40.76555345195444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f07d5da561%3A0x61f6aa300ba8339d!2z0J7RgtC10LvRjCDQn9C70LDQt9Cw!5e0!3m2!1sru!2skz!4v1698330412612!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
         </div>
     </div>
+
+    <div id="app">
+        <example-component></example-component>
+    </div>
+
 
 @endsection
